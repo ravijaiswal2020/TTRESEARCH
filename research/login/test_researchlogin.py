@@ -63,3 +63,6 @@ def test_login2(driver):
     driver.find_element(By.XPATH, "//button[@aria-label='Sign In']").click()
     time.sleep(4)
     assert driver.current_url == "https://www.taxmann.com/research"
+    time.sleep(3)
+
+    print(driver.current_url)
